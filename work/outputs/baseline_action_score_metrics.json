@@ -1,0 +1,28 @@
+{
+  "rows_ranked": 30000,
+  "base_rate_observed_decline": 0.5420666666666667,
+  "precision_at_k": {
+    "precision_at_10": 0.8,
+    "precision_at_50": 0.62,
+    "precision_at_100": 0.57
+  },
+  "staleness_verdict": "OPPOSITE",
+  "prior_visibility_verdict": "CONFIRMED",
+  "score_formula": "stale_points + visibility_points; fixed hand-written thresholds",
+  "scoring_inputs": [
+    "days_since_last_update",
+    "impressions_prev_30d"
+  ],
+  "excluded_from_scoring": [
+    "trend_direction",
+    "trend_pct",
+    "impressions_last_30d",
+    "clicks_last_30d",
+    "sessions_last_30d",
+    "impressions_90d",
+    "clicks_90d",
+    "sessions_90d",
+    "content_id",
+    "client_id"
+  ]
+}
